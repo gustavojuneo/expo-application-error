@@ -1,0 +1,40 @@
+{
+  "extends": "airbnb",
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-use-before-define": ["error", { "variables": false }],
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
+    "no-restricted-syntax": ["error", "WithStatement"],
+    "import/prefer-default-export": "off",
+    "react/forbid-prop-types": ["error", { "forbid": ["array"] }],
+    "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
+    "react/jsx-closing-bracket-location": ["error", "after-props"],
+    "react/no-unused-prop-types": [0],
+    "react/destructuring-assignment": "off",
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": ["preferButton" ]
+    }],
+    "jsx-a11y/no-autofocus": [0],
+    "dot-notation": "off",
+    "global-require": "off",
+    "object-curly-newline": [0],
+    "import/no-cycle": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-wrap-multilines": "off",
+    "react/function-component-definition": ["error", {
+      "namedComponents": ["function-declaration", "arrow-function"]
+    }],
+    "react/react-in-jsx-scope": "off",
+    "react/style-prop-object": "off",
+    "react/jsx-props-no-spreading": "off",
+    "class-methods-use-this": "off",
+    "default-param-last": "off",
+    "import/no-import-module-exports": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "react/static-property-placement": "off",
+    "react/no-array-index-key": "off"
+  }
+}
